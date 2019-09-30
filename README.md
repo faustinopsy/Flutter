@@ -1,16 +1,28 @@
-# flutter_app
+//fatorial';
 
-A new Flutter application.
+void main() {
+  //var rand = Random();
+ 
+  
+// List<int> lista = [List.generate(10, (_) => 
+ //               rand.nextInt(11))];
+   List<int> lista = [1,2,3,4,5,6,7,8,9];
+  
+  
+  lista.forEach((numero) => 
+             print('Nº($numero) = ${teste(numero)}')
+          );
+  
+//   for(var numero in lista)
+//     print('teste($numero) = ${teste(numero)}');
+}
 
-## Getting Started
+// f(n) -> f(n - 1) * 2 para n > 2
+// f(n) -> n * f(n - 1)
+int teste(int n) {
+  if(n <=0) return 1;
+  return n * teste(n-1);
+  
+  //return n > 2 ? teste(n - 1) * 2 : 1;
+}
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
